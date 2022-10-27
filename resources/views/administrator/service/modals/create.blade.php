@@ -1,0 +1,34 @@
+<div class="modal fade" id="modal-create-element">
+    <form action="{{ route('service.content.store') }}" method="post" class="modal-dialog" data-info="reset" enctype="multipart/form-data">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Crear</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+                </button>
+            </div>
+        <div class="modal-body">
+            <input type="hidden" name="page_id" value="7">
+            <div class="form-group">
+                <input type="text" name="order" class="form-control" placeholder="Orden">
+            </div>
+            <div class="form-group">
+                <input type="text" name="title" class="form-control" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+                <textarea name="content1" id="content1-create" class="form-control content1-create ckeditor" cols="30" rows="15"></textarea>
+            </div>   
+            <img src="" class="img-fluid mb-3">
+            <div class="form-group">
+                <input type="file" name="image" class="form-control-file">
+            </div>  
+        </div>
+        <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn btn-primary create">Guardar</button>
+        </div>
+        </div>
+        <!-- /.modal-content -->
+    </form>
+    <!-- /.modal-dialog -->
+</div>
